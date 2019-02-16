@@ -47,18 +47,26 @@ const Container = styled.div`
   .row {
     @media ${device.mobileS} {
       margin: 0;
+      display:flex;
+      justify-content: center;
     }
   
     @media ${device.mobileM} {
       margin: 0;
+      display:flex;
+      justify-content: center;
     }
   
     @media ${device.mobileL} {
       margin: 0;
+      display:flex;
+      justify-content: center;
     }
 
     @media ${device.tablet} {
       margin: 0 5%;
+      display:flex;
+      justify-content: center;
     }
   }
 `;

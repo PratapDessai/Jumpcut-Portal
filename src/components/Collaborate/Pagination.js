@@ -72,6 +72,22 @@ const PaginationWrapper = styled.div`
   margin-right: 4%;
   height: 110px;
 
+  @media ${device.mobileS} {
+    justify-content: center;
+  }
+
+  @media ${device.mobileM} {
+    justify-content: center;
+  }
+
+  @media ${device.mobileL} {
+    justify-content: center;
+  }
+
+  @media ${device.tablet} {
+    justify-content: flex-end;
+  }
+
   ul {
     display: inline-block;
     padding-left: 15px;
@@ -86,12 +102,20 @@ const PaginationWrapper = styled.div`
     height: 12 * 2;
     margin: 10 0;
 
+    @media ${device.mobileS} {
+      margin: 0 ;
+    }
+
     @media ${device.mobileM} {
       margin: 0;
     }
-  
-    @media ${device.mobileS} {
-      margin: 0 ;
+
+    @media ${device.mobileL} {
+      margin: 10 0;
+    }
+
+    @media ${device.tablet} {
+      margin: 10 0;
     }
   }
 

@@ -3,9 +3,10 @@ import { BackgroundWrapper } from './Page.style';
 import UserList from '../User/UserList';
 import Search from '../Collaborate/Search';
 import Pagination from '../Collaborate/Pagination';
-import MediaQuery from 'react-responsive';
+import Responsive from 'react-responsive';
 
 export default class Collaborate extends Component {
+
   render() {
     return (
       <React.Fragment>
@@ -14,17 +15,17 @@ export default class Collaborate extends Component {
         </BackgroundWrapper>
         <UserList />
         {/* For Desktop and Laptop screens */}
-        <MediaQuery minDeviceWidth={769}>
+        <Responsive minWidth={992}>
           <Pagination perPage={16}/>
-        </MediaQuery>
+        </Responsive>
         {/* For Tablet */}
-        <MediaQuery maxDeviceWidth={768} minDeviceWidth={426}>
+        <Responsive minWidth={768} maxWidth={991}>
           <Pagination perPage={9}/>
-        </MediaQuery>
+        </Responsive>
         {/* For Mobile Screens */}
-        <MediaQuery maxDeviceWidth={425}>
+        <Responsive maxWidth={767}>
           <Pagination perPage={5}/>
-        </MediaQuery>
+        </Responsive>
       </React.Fragment>
     )
   }

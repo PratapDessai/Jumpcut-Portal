@@ -8,7 +8,7 @@ export default class User extends Component {
   render() {
     const { id, name, img, mode } = this.props.user;
     return (
-      <UserWrapper className="col-9 mx-auto col-md-4 col-lg-3 my-3">
+      <UserWrapper className="col-9 col-md-4 col-lg-3 my-3">
         <div className="card">
 
           <UserConsumer>

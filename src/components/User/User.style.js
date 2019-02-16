@@ -3,6 +3,9 @@ import { device } from '../../theme/Device';
 
 export const UserWrapper = styled.div`
 
+  display: flex;
+  justify-content: center;
+
   .card {
     border-color: trasparent;
     transition: all 1s linear;
