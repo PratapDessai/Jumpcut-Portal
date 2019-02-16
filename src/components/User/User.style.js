@@ -18,9 +18,9 @@ export const UserWrapper = styled.div`
   &:hover {
     .card {
       box-shadow: inset 0 0 20px 2px var(--selectedGreen);
-      -moz-box-shadow: 0 0 20px var(--selectedGreen);
-      -webkit-box-shadow: 0 0 20px var(--selectedGreen);
-      -o-box-shadow: 0 0 20px var(--selectedGreen);
+      -moz-box-shadow: inset 0 0 20px 2px var(--selectedGreen);
+      -webkit-box-shadow: inset 0 0 20px 2px var(--selectedGreen);
+      -o-box-shadow: inset 0 0 20px 2px var(--selectedGreen);
     }
     .card-footer {
       background: rgba(247, 247, 247);
