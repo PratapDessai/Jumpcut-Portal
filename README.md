@@ -1,4 +1,4 @@
-## JUMPCUT Front End Test 
+## JUMPCUT Front End 
 
 # Setup
 Bootstrapped this project from create-react-app.
